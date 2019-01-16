@@ -1,6 +1,7 @@
 ---
 date: '2019-01-16'
-title: 'ACCASP Project Team Meeting: Characterizing range shifts in British Columbia groundfish species in response to local climate velocities'
+title: '**ACCASP Project Meeting**' 
+subtitle: 'Characterizing range shifts in British Columbia groundfish species in response to local climate velocities'
 output: pdf_document
 ---
 
@@ -54,44 +55,43 @@ output: pdf_document
 ### Break for lunch
 
 * Review of stated deliverables and timeline
+\clearpage
 
 * High-level discussion/brainstorming of how to achieve project objectives:
-  - Start with free idea sharing (<20 min)
-  - Provide opportunity for idea refinement, clarification, and discussion of
+    - Start with free idea sharing (<20 min)
+    - Provide opportunity for idea refinement, clarification, and discussion of
     broad conceptual approaches
-  - Discuss goal of eventual integration into stock assessments
-  - Discuss how to define publishable units
+    - Discuss goal of eventual integration into stock assessments
+    - Discuss how to define publishable units
 
 * Technical discussion of how to achieve project objectives:
-  1. Should synoptic survey blocks be treated separately or stitched together?
-  2. Which modeling framework should we use? TMB vs. INLA vs. Stan
-  3. Should we attempt to use other survey data: IPHC, HBLL (inside and
-     outside), sablefish? Which environmental variables do these other
-     surveys collect?
-  4. How do we model all 3 spatial dimensions of climate velocity (lat,
-     lon, and depth) and variables (temp, salinity, O2)?
-  5. Are centre of gravity and area of occupancy appropriate response
-     variables for Canadian waters?
-  6. Do we want to account for size structure of populations?
-  7. Should we consider multi-species covariance?
+    1. Should synoptic survey blocks be treated separately or stitched together?
+    2. Which modeling framework should we use? TMB vs. INLA vs. Stan
+    3. Should we attempt to use other survey data: IPHC, HBLL (inside and outside), sablefish? 
+        Which environmental variables do these other surveys collect?
+    4. How do we model all 3 spatial dimensions of climate velocity (latitude, longitude, depth) and variables (temp, salinity, O2)?
+    5. Are centre of gravity and area of occupancy appropriate response variables for Canadian waters?
+    6. Do we want to account for size structure of populations?
+    7. Should we consider multi-species covariance?
 
 * Brainstorming of ideas for breakout group topics:
-  - Some possibilities include:
-    1. Implementing a random walk for environmental covariates (time
-       varying quadratic effects of O2, temp, depth and salinity).
-    2. Implementing centre of gravity and area of occupancy calculations.
-    3. Brainstorming visualizations for expected patterns.
-    3. Searching broadly for any relevant literature we might have missed.
-    4. Brainstorming our hypotheses for expected outcomes. Are there expected
-       patterns across species groups because of their biology? Are there
-       existing hypotheses for some species groups and regions?
-  - Choose priorities and who should tackle which problem.
-  - Start breakout groups.
+    - Some possibilities include:
+        1. Implementing a random walk for environmental covariates (time varying quadratic effects of O2, temperature, depth and salinity).
+        2. Implementing centre of gravity and area of occupancy calculations.
+        3. Brainstorming visualizations for expected patterns.
+        4. Searching broadly for any relevant literature we might have missed.
+        5. Brainstorming our hypotheses for expected outcomes. 
+            Are there expected patterns across species groups because of their biology? 
+            Are there existing hypotheses for some species groups and regions?
+       
+* Choose priorities and who should tackle which problem.
+
+* Start breakout groups.
+
 
 ## Day 2: Tuesday, January 22nd 2019
 
-* Welcome back and review of breakout group objectives and any progress from
-  previous afternoon.
+* Welcome back and review of breakout group objectives and any progress from previous afternoon.
 
 * Breakout group work (remainder of the morning)
 
@@ -110,6 +110,7 @@ output: pdf_document
 # Authorship agreement
 
 We will adopt the authorship guidelines from the Nutrient Network research consortium, which specifies that one must meet at least two of the criteria in the table below to qualify for authorship on any given paper. Expectations for our authorship agreement include additional participation as requested by the leads of each paper, including but not limited to timely comments and edits on the manuscripts themselves. All authors will be asked to state how they plan to contribute to each paper moving forward and this information will be kept in a file shared with all participants. Additional authors will be invited based on need of their expertise. Final decisions on authorship are up to the lead of each paper and workshop chairs.
+
 
 +---------------------------------+---------------------------------+
 | **Authorship Rubric**           | **Example Contribution**        |
@@ -142,3 +143,14 @@ We will adopt the authorship guidelines from the Nutrient Network research conso
 |                                 | citations linking to new        |
 |                                 | literature areas, copy editing  |
 +---------------------------------+---------------------------------+
+
+# 
+# Supporting documents
+
+### ACCASP Proposal
+
+https://www.dropbox.com/s/ot9xbtz60skrok8/ACCASP-proposal-gf-rangeshifts-2018-09-06.pdf?dl=0
+
+### A reproducible data synopsis for over 100 species of British Columbia groundfish
+
+https://www.dropbox.com/s/yec4yp9vz2lgpb5/pbs-gf-synopsis-v0.6.1.pdf?dl=1
