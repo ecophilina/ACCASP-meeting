@@ -4,124 +4,95 @@ title: 'ACCASP Project Team Meeting: Characterizing range shifts in British Colu
 output: pdf_document
 ---
 
+
 # Meeting objectives
 
-Ensure everyone has an up-to-date understanding of the current status of this project.
+Ensure everyone has an up-to-date understanding of the project objectives as defined in the ACCASP Proposal and the current status of this project.
 
-Build familiarity with each other's strengths and expertise, and how each of us will be able to contribute to fulfilling the project goals.
+Build familiarity with each other's strengths and expertise.
 
-Agree to project goals and objectives as defined in the Project Proposal .
+Use open discussion to establish a concensus around the high-level approaches that will be applied in implementing this project.
 
-Review and confirm the project boundaries as defined in the scoping table in the Project Charter.
+Define publishable units and ways to make results relevent to DFO science and fisheries management.
 
-Agree to reasonable project milestones and set a draft timetable as defined in the Project Charter.
+Become familiar with each team member's interest, available time to devote to this project, and goals in terms of authorship. 
 
-Determine each author team member's interest, available time to devote to this project, and high-level role in the project.
+Assess progress towards stated project milestones and set a draft timetable going forward.
 
-Decide on author team meeting schedule and establish each individual's tasks to be completed before our next meeting.
+Brainstorm list of potential technical break-out group tasks.
 
-Brainstorm list of potential technical working group members to reach out to.
+Work in teams to complete group tasks, thus establishing collaborative understanding and hopefully clearing some key analytical or conceptual hurdles. 
 
 
 # Meeting agenda
 
-* Welcome and review of objectives and agenda. Adjust as necessary.
+## Day 1: Monday, January 21st 2019
 
-* A quick summary of the history of the former tiered-approach project [Greg]
+* Welcome and review of objectives and agenda. 
 
-* Review tiered approach workshop recommendations (come back to later)
+* Quick round of introductions.
 
-* A quick summary of the related DLMtool DFO-funded project [Robyn]
+* An overview of the ACCASP project proposal [Sean]
 
-* Current status
-    - Now Sean's main project; will be Elise's main project soon
-    - Project Charter in draft form
-    - Met with Tom, Adrian, and Robyn at UBC
-    - Started developing shortraker rockfish OM as a learning exercise
-    - Literature review, Zotero library, Github repository with code, notes, writing
-    - Have a copy of GFASTeR from Norm in private repository updated with Roxygen, have access to draft scorecard SQL code
+* Short review of recent literature [Philina]
 
-* Project goals and objectives
-    - Agree to project goals and objectives as defined in the Project Charter.
-    - Discuss and edit as necessary.
-    - Consider workshop recommendations. Which are suitable for the new project and which should we decide to leave behind?
+* Team presentations introducing themselves and their related work
+    - Eric Ward 
+    - Chris Rooper
+    - Karen Hunter
+    - Brendan Connors
+    - Andy Edwards
+    - Robyn Forrest [by proxy]
+    - Sean Anderson
 
-* Discuss and brainstorm scoping table in the Project Charter to carefully define the boundaries
-    - Review the table and edit it as necessary 
-    - Brainstorm additional scoping restrictions 
-    - Make sure we cover invertebrates
+### Break for lunch
 
-* Project milestones discussion
-    - Review table and edit as necessary
+* Review of stated deliverables and timeline
+
+* High-level discussion of how to achieve project objectives:
+    - Start with free idea sharing (<5 min) 
+    - Provide oppertunity for idea refinement, clarification, and discussion of broad conceptual approaches 
+    - Discuss goal of eventual integration into stock assessments 
+    - Discuss if these models could impact our understanding of changes in productivity and dispersal
+    - Discuss how to define publishable units
     
-* Brainstorm list of potential technical working group members
+* Technical discussion of how to achieve project objectives:
+      1. Should synoptic survey blocks be treated separately, or somehow stitched together?
+	    2. Which modeling framework and plateform should we use? Frequentist TMB vs. Bayesian INLA or STAN.
+	    3. Should we attempt to use other survey data: IPHC, HBLL(inside and outside), sablefish?
+	     - Which environmental variables do these other surveys collect? 
+	    4. How do we model all 3 spatial dimensions of climate velocity (lat, lon, and depth) and variables (temp, salinity, O2)?
+	    5. Are centre of gravity and area of occupancy appropriate response variables for Canadian waters?  
+	     - If so, how best do we calculate them?
+	    6. How should we deal with size structure of populations?
+	    7. Should we consider multi-species covariance (e.g.. spatial dynamic factor analysis in TMB)?
+	  
+* Free wheeling discussion of ideas for topics for breakout groups
+    - Possibilities include: 
+      1. How to implement a random walk for environmental covariates (time varying quadratic effects of O2, temp, depth and salinity)?
+	    2. How to calculate centre of gravity and area of occupancy?
+	    3. Plan best Visualizations for expected patterns
+    - Choose priorities and who should tackle which problem
 
-* Review possible roles
-    - Review and edit list of possible roles
-    - Determine everyone's interest, available time to devote to this project, and high-level role in the project
 
-* Discuss meeting schedule and establish tasks for next meeting
-    - How frequently should we meet?
-    - One meeting before technical working group meeting #1?
-    - Schedule next meeting
-    - Agree to tasks to complete by specific date 
+## Day 2: Tuesday, January 22nd 2019
 
+* Welcome back and review of breakout group objectives
 
-# Possible roles
+* Breakout group work (remainder of the morning)
 
-1. Establishing candidate fisheries objectives 
+### Break for lunch
 
-1. Selecting candidate management procedures and providing brief documentation on the justification for their selection, possibly based on performance in previous simulation projects and/or performance with our generic operating models.
+* Discussion of results of morning's group work
 
-1. Testing the sensitivity of DLMtool to data-stripping?
+* Additional shorter breakout group work session (until ~3pm)
 
-1. Developing generic operating models for species groups
+* Wrap-up 
 
-1. Applying framework to 1--2 stocks as an example and to establish a template for analyses, figures, and reporting
-
-1. Documenting minutes from Working Group meetings
-
-1. Reaching out to invite potential Working Group members
-
-1. Literature review of management procedure approaches for Working Paper introduction
-
-1. Development of R package to facilitate scorecard generation with GFASTeR
-
-1. Development of R package to make consistently styled DFO plots with DLMtool
-
-1. Overseeing scorecard Science Response document
-
-1. Organizing and writing the majority of the Working Paper
+    - Review project objectives, deliverables and timeline in light of days acheivements
+    - Discuss each team member's interests, availability, and desired roles 
+    - Set goals and guidelines for on-going collaboration
+    - Review key conclusions from both discussions and breakout group work
 
 \clearpage
-
-# Recommendations from the tiered approach workshop
-
-* Develop a terms of reference and workplan for an advisory group (technical working group, TWG), identify members of the TWG, and clarify each member’s duties and expected participation. The short-term next steps for a TWG are:
-
-    * Adopt the candidate Tiers 1-5 for communication of data availability to clients but amalgamate Tiers 3-5 for analysis and simulations.
-
-    * Design the simulation testing appropriate for each tier.
-
-    * Do not use precautionary buffers and caps. Account for risk and uncertainty either within the stock assessment outputs (Tiers 1-2) or when using closed-loop simulation to select an assessment method (Tiers 3-5).
-
-    * Use the data scorecard as presented in the workshop to summarise data needed for simulations and to communicate data availability.
-
-    * Identify management objectives and performance metrics to measure performance of alternative assessment methods.
-
-    * Articulate the methods by which species are placed in tiers.
-
-    * Scope DLMtool and customise for Canadian groundfish fisheries, if needed.
-
-    * Examine types of data available in more detail.
-
-    * Examine processes by which a species moves up or down tiers.
-
-* Write code for DLMtool to test the sensitivity of data-stripping and performance of alternative assessment methods for stocks with different abundance trends.
-
-* Develop a prioritization scorecard that takes into account the factors important to the BC groundfish sector.
-
-* Develop a schedule for reviewing the placement of species within the TA framework.
-
-* Collaborate with the CIC-led advisory process: Multi-species Management Systems.
 
