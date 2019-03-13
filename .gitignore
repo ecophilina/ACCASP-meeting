@@ -2,6 +2,4 @@
 .Rhistory
 .RData
 .Ruserdata
-.pdf
-2017-09-13-project-team-meeting.md
-2019-01-15-project-team-meeting.pdf
+*.pdf

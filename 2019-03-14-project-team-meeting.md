@@ -1,10 +1,9 @@
 ---
 date: '2019-03-14'
-title: '**ACCASP Project Meeting 2**' 
+title: '**ACCASP Project Meeting 2**'
 subtitle: 'Characterizing range shifts in British Columbia groundfish species in response to local climate velocities'
 output: pdf_document
 ---
-
 
 # Meeting objectives
 
@@ -27,62 +26,76 @@ output: pdf_document
 
 1. Brainstorm list of potential technical break-out group tasks.
 
-1. Work in teams to complete group tasks, thus establishing collaborative
-   understanding and hopefully clearing some key analytical or conceptual
-   hurdles.
+1. Work in teams on group tasks to hopefully clear some important analytical and
+   conceptual hurdles.
 
 
-## Day 1: Thursday, March 14th 2019 
-Colvile Room, **Coast Bastion Hotel**, 11 Bastion Street, Nanaimo 
+## Day 1: Thursday, March 14th 2019
 
-9:00 am - 4:00 pm
+Colvile Room, **Coast Bastion Hotel**, 11 Bastion Street, Nanaimo
+
+9:00 am -- 4:00 pm
 
 ### Meeting agenda
 
+* Introductions
+
 * Welcome and review of meeting objectives and agenda
 
-* Team introductions and any brief presentations on new related work 
+* Review of stated deliverables and timeline (Sean/Philina)
 
-* Review of stated deliverables and timeline [Sean/Philina]
+* Any brief presentations on related work from working group members
 
-* Discussion of data sources [Sean/Philina]
-
+* Brief review of data sources (Sean/Philina)
     - Synoptic trawl surveys
     - Hard-bottom long-line
     - Sablefish
-    - Halibut [Andy]
+    - Halibut (Andy)
 
-* Overview of environmnental sensor data (depth, temperature, DO, salinity)
+* Functionality now built into the sdmTMB model (Sean)
+    - Spatial and spatiotemporal or independent spatiotemporal random fields
+    - A complete set of families and links
+    - Prediction on new data sets through a predict() function with a full predictive-process projection
+    - AR1 spatiotemporal random fields (new)
+    - Time-varying parameters (new)
+    - Centre of gravity calculations (new)
+    - Standard errors on predictions (new)
+    - Ability to input arbitrary INLA meshes (new)
 
+* Simulation testing of the sdmTMB model (Philina)
+
+* Overview of environmental sensor data (depth, temperature, dissolved oxygen, salinity)
     - data availability
-    - intercorrelations
+    - basic data quality checking and cross-correlations (Philina)
     - preliminary models of environmental variables for projection grids
-        - TMB
-        - INLA
+        - TMB (Sean)
+        - INLA (Philina)
 
-\clearpage
+* Visualizing time-varying depth and temperature effects through time (Sean)
 
 * High-level discussion/brainstorming of how to achieve project objectives:
 
-    - Start with free idea sharing (<20 min)
+    - Start with free idea sharing
     - Provide opportunity for idea refinement, clarification, and discussion of broad conceptual approaches
-    - Discuss goal of eventual integration into stock assessments
     - Discuss how to define publishable units
 
 * Technical discussion of how to achieve project objectives:
 
-    1. Should synoptic survey blocks be treated separately or stitched together?
-    2. Which modeling framework should we use? TMB vs. INLA vs. Stan
-    3. Should we attempt to use other survey data: IPHC, HBLL (inside and outside), sablefish? 
+    1. Parameter-focused inference vs. projection-based inference (e.g. weighted-mean temperature)
+    1. Salinity projection issues
+    1. Should synoptic survey regions be treated separately or stitched together?
+    2. Modeling frameworks: TMB vs. INLA vs. Stan vs. machine learning
+    3. Should we attempt to use other survey data: IPHC, HBLL (inside and outside), sablefish?
         Which environmental variables do these other surveys collect?
     4. How do we model all 3 spatial dimensions of climate velocity (latitude, longitude, depth) and variables (temp, salinity, O2)?
     5. Are centre of gravity and area of occupancy appropriate response variables for Canadian waters?
     6. Do we want to account for size structure of populations?
     7. Should we consider multi-species covariance?
+    8. Species to focus on
 
 ### Break for lunch
 
-* Broader scope planning (while we have most people present -- either here or Friday morning?)
+* Broader scope planning (while most people are present)
     - Review project objectives, deliverables, and timeline
     - Discuss each team member's interests, availability, and desired roles
     - Set goals and guidelines for on-going collaboration
@@ -90,31 +103,32 @@ Colvile Room, **Coast Bastion Hotel**, 11 Bastion Street, Nanaimo
 * Brainstorming of ideas for breakout group topics:
 
     - Some possibilities include:
-        1. Implementing a random walk for environmental covariates (time varying quadratic effects of O2, temperature, depth and salinity).
-        2. Implementing centre of gravity and area of occupancy calculations.
-        3. Brainstorming visualizations for expected patterns.
-        4. Searching broadly for any relevant literature we might have missed.
-        5. Brainstorming our hypotheses for expected outcomes. 
-            Are there expected patterns across species groups because of their biology? 
-            Are there existing hypotheses for some species groups and regions?
+        1. Brainstorming visualizations approaches.
+        1. Searching broadly for any relevant literature we might have missed.
+        1. Implementing a random walk for environmental covariates in R-INLA (time varying quadratic effects of O2, temperature, depth and salinity).
+        1. Implementing and comparing barrier models in R-INLA
+        1. Implementing area of occupancy calculations and weighted average temperature etc.
+        1. Brainstorming our hypotheses for expected outcomes. Are there expected patterns across species groups because of their biology? Are there existing hypotheses for some species groups and regions?
+        1. Improving environmental projection model or theory behind those.
+        1. Developing or completing spin-off projects? E.g. Robyn's cumulative depth profile work.
+        1. Reviewing guidelines for INLA meshes and developing a defensible mesh for our surveys/coastline.
 
-* Choose priorities and who should tackle which problem in breakout groups 
-      
-* Start breakout groups.
+* Choose priorities and who should tackle which problem in breakout groups
 
+* Start breakout groups
 
-## Day 2: Friday, March 15th 2019 
+## Day 2: Friday, March 15th 2019
 
-Room T325, **Pacific Biological Station**, 3190 Hammond Bay Road, Nanaimo
+Room T325 (old library room), **Pacific Biological Station**, 3190 Hammond Bay Road, Nanaimo
 
-9:00 am - 2:00 pm
+9:00 am -- 2:00 pm
 
-* Welcome back and review of breakout group objectives and any progress from previous afternoon.
+* Welcome back and review of breakout group objectives and any progress from previous afternoon
 
-* Breakout group work (remainder of the morning)
+* Breakout-group work (remainder of the morning)
 
-* Review key conclusions from both discussions and breakout group work
-  
+* Review conclusions from both discussions and breakout-group work
+
 \clearpage
 
 # Authorship agreement
@@ -154,13 +168,12 @@ We will adopt the authorship guidelines from the Nutrient Network research conso
 |                                 | literature areas, copy editing  |
 +---------------------------------+---------------------------------+
 
-# 
 # Supporting documents
 
 ### ACCASP Proposal
 
 https://www.dropbox.com/s/ot9xbtz60skrok8/ACCASP-proposal-gf-rangeshifts-2018-09-06.pdf?dl=1
 
-### A reproducible data synopsis for over 100 species of British Columbia groundfish \newline (Current draft)
+### A reproducible data synopsis for over 100 species of British Columbia groundfish (in press)
 
-https://www.dropbox.com/s/yec4yp9vz2lgpb5/pbs-gf-synopsis-v0.6.1.pdf?dl=1
+https://www.dropbox.com/s/r0uf3tp21yf6dt0/pbs-gf-synopsisv0.7.2.pdf?dl=1
